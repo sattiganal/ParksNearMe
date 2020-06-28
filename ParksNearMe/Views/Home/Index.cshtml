@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Park Search";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Search Parks</h1>
+    <!-- <h2>Enter your zip code to search for a park.</h2> -->
+    <div>
+        <span><a asp-controller="Search" asp-action="SearchByState">Search Park by State</a></span>
+        <span> | </span>
+        <span><a asp-controller="Search" asp-action="SearchByCode">Search Park by Code</a></span>
+        <span> | </span>
+        <a asp-controller="Search" asp-action="SearchByName">Search Park by Name</a>
+    </div>
+</div>

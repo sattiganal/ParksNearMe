@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "fEmRkMxUh+6RIjcghbIHCRYeewRy69okJUoPMUe9B04ZEEEA9I6429giTlMuMwBOMQJawx7e1DFucAuy5f2qAg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\shyam\\source\\repos\\ParksNearMe\\ParksNearMe.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\shyam\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

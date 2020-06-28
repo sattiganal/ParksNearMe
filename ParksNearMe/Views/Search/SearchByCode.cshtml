@@ -1,0 +1,49 @@
+﻿@model Parks
+@{
+    ViewData["Title"] = "Park By Code";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Search by Code</h1>
+    <div>
+        <form asp-action="SearchByCode" asp-controller="Search" method="post">
+            <span>
+                <input type="text" name="parkCode" placeholder="Enter code to search" />
+            </span>
+            <span>
+                <button type="submit" > Go </button>
+            </span>
+
+        </form>
+    </div>
+
+    <div id="resultsdiv">
+        @if (Model != null)
+        {
+            <p></p>
+            <div class="text-center"> Found @Model.total matching park(s).</div>
+            <p></p>
+            <div>
+                <table>
+                    @foreach (Park park in Model.data)
+                    {
+                        <tr>
+                            <td>
+                                <div>
+                                    <table>
+                                        <tr>
+                                            <td><b>@park.fullName</b> (<a class="btn-link" href="@park.url">Website</a>) </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="small">@park.description</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        }
+    </div>
+</div>
