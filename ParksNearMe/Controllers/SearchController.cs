@@ -13,7 +13,7 @@ namespace ParksNearMe.Controllers
         HttpClient httpClient;
 
         static string BASE_URL = "https://developer.nps.gov/api/v1/";
-        static string API_KEY = "mdBybOievMdeX3eYSC0MhFu3U7xRV18xHAPG04qb";
+        static string API_KEY = "RaUgx7BbI1b7lfyYTEwdFSbfpOKfFce1mHNpCHsX";
 
         public IActionResult SearchByState(String stateCode)
         {
