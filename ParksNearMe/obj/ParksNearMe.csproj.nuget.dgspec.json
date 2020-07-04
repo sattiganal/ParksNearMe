@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\shyam\\source\\repos\\ParksNearMe\\ParksNearMe.csproj": {}
+    "C:\\Users\\shyam_000\\Source\\Repos\\sattiganal\\ParksNearMe\\ParksNearMe\\ParksNearMe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\shyam\\source\\repos\\ParksNearMe\\ParksNearMe.csproj": {
+    "C:\\Users\\shyam_000\\Source\\Repos\\sattiganal\\ParksNearMe\\ParksNearMe\\ParksNearMe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\shyam\\source\\repos\\ParksNearMe\\ParksNearMe.csproj",
+        "projectUniqueName": "C:\\Users\\shyam_000\\Source\\Repos\\sattiganal\\ParksNearMe\\ParksNearMe\\ParksNearMe.csproj",
         "projectName": "ParksNearMe",
-        "projectPath": "C:\\Users\\shyam\\source\\repos\\ParksNearMe\\ParksNearMe.csproj",
-        "packagesPath": "C:\\Users\\shyam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\shyam\\source\\repos\\ParksNearMe\\obj\\",
+        "projectPath": "C:\\Users\\shyam_000\\Source\\Repos\\sattiganal\\ParksNearMe\\ParksNearMe\\ParksNearMe.csproj",
+        "packagesPath": "C:\\Users\\shyam_000\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shyam_000\\Source\\Repos\\sattiganal\\ParksNearMe\\ParksNearMe\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\shyam\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\shyam_000\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -65,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

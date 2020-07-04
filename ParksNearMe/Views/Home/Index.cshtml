@@ -1,15 +1,59 @@
-﻿@{
+﻿@model Chart
+@{
     ViewData["Title"] = "Park Search";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Search Parks</h1>
-    <!-- <h2>Enter your zip code to search for a park.</h2> -->
-    <div>
-        <span><a asp-controller="Search" asp-action="SearchByState">Search Park by State</a></span>
-        <span> | </span>
-        <span><a asp-controller="Search" asp-action="SearchByCode">Search Park by Code</a></span>
-        <span> | </span>
-        <a asp-controller="Search" asp-action="SearchByName">Search Park by Name</a>
+    <div class="text-center">
+        <h1 class="display-4">Search Parks</h1>
+        <!-- <h2>Enter your zip code to search for a park.</h2> -->
+        <div>
+            <span><a asp-controller="Search" asp-action="SearchByState">Search Park by State</a></span>
+            <span> | </span>
+            <span><a asp-controller="Search" asp-action="SearchByCode">Search Park by Code</a></span>
+            <span> | </span>
+            <a asp-controller="Search" asp-action="SearchByName">Search Park by Name</a>
+        </div>
+        <br/>
+        <br/>
+        <div>
+            <h2>Chart of parks by each state</h2>
+            <div style="style="width: 400px; margin: auto; float:none"">
+                <canvas id="parksByState"></canvas>
+            </div>
+
+            <script>
+                var config = {
+                    type: '@Model.chartType',
+                    data: {
+                        datasets: [{
+                            data: [@Model.data],
+                            backgroundColor: [@Html.Raw(@Model.backgroundColors)],
+                            label: 'Dataset 1'
+                        }],
+                        labels: [@Html.Raw(@Model.labels)]
+                    },
+                    options: {
+                        responsive: true,
+                        legend: {
+                            position: 'top',
+                        },
+                        title: {
+                            display: true,
+                            text: '@Model.chartTitle'
+                        },
+                        animation: {
+                            animateScale: true,
+                            animateRotate: true
+                        }
+                    }
+                };
+
+                window.onload = function () {
+                    var ctx = document.getElementById('parksByState').getContext('2d');
+                    window.myDoughnut = new Chart(ctx, config);
+                };
+
+            </script>
+        </div>
+
     </div>
-</div>
