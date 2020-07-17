@@ -1,0 +1,28 @@
+﻿@model MyFavParksView
+@{
+    ViewData["Title"] = "MyFavs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>MyFav Parks</h1>
+
+<h2>@Model.currentUser.firstName 's Favorite Parks are,</h2>
+<ul>
+    @foreach (ParksNearMe.DataAccess.UserFavPark favPark in Model.currentUser.myFavParks)
+    {
+        <li>@favPark.park.parkName</li>
+    }
+
+</ul>
+
+<h2>@Model.favePark.parkName is Favorite Parks for,</h2>
+<ul>
+    @foreach (ParksNearMe.DataAccess.UserFavPark favPark in Model.favePark.userFavParks)
+    {
+    <li>@favPark.user.firstName &nbsp; @favPark.user.lastName</li>
+    }
+
+</ul>
+
+<h2>Most people's Favorite Park is - @Model.mostFavPark.parkName</h2>
+

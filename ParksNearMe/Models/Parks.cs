@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ParksNearMe.DataAccess;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -29,5 +30,13 @@ namespace ParksNearMe.Models
         public string id { get; set; }
         public string fullName { get; set; }
         public string latitude { get; set; }
+    }
+
+    public class MyFavParksView
+    {
+        public ParkUser currentUser { get; set; }
+        public ParksNearMe.DataAccess.FavPark mostFavPark { get; set; }
+
+        public FavPark favePark { get; set; }
     }
 }
